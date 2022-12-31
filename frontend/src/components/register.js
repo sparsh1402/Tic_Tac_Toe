@@ -1,19 +1,61 @@
 import React, { useEffect , useState } from 'react'
-import { Link } from 'react-router-dom';
-import Notification from './Notification';
+import { Link ,useNavigate } from 'react-router-dom';
+import Toast from './Toast';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
 import { toast } from "react-toastify";
 
 import './register.css';
 export default function Register() {
+  const navigate = useNavigate();
   const [name, setName] = useState("");
   const [userName, setUserName] = useState("");
   const [email ,setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   //Toast functions
-  const notifyA = () => toast.error('WOW')
+  const [list, setList] = useState([]);
+  let toastProperties = null;
+
+  const showToast = (type , msg )=> {
+    switch(type) {
+      case 'success':
+        toastProperties = {
+          id: list.length+1,
+          title: 'Congratulations!!',
+          description: msg,
+          backgroundColor: '#5cb85c'
+        }
+        break;
+      case 'danger':
+        toastProperties = {
+          id: list.length+1,
+          title: 'Sorry',
+          description: msg,
+          backgroundColor: '#d9534f'
+        }
+        break;
+      case 'info':
+        toastProperties = {
+          id: list.length+1,
+          title: 'Info',
+          description: 'This is a info toast component',
+          backgroundColor: '#5bc0de'
+        }
+        break;
+      case 'warning':
+        toastProperties = {
+          id: list.length+1,
+          title: 'Warning',
+          description: 'This is a warning toast component',
+          backgroundColor: '#f0ad4e'
+        }
+        break;
+      default:
+        toastProperties = [];
+    }
+    setList([...list, toastProperties]);
+  };
 
   const postData = () => {
     //sending data to server
@@ -38,7 +80,14 @@ export default function Register() {
 
     }).then(res => res.json())
       .then(data => {
-        notifyA()
+        if (data.error) {
+          showToast('danger',data.error)
+        }
+        else if(data.message){
+          showToast('success', data.message)
+          navigate("/signin")
+        }
+        
         console.log(data)
       })
   }
@@ -65,9 +114,9 @@ export default function Register() {
                    <input type="password" className = "passwordBox" name="password" id="password" value={password} placeholder="Password" onChange={(e)=>{setPassword(e.target.value)}} />
               </div>
           
-            <Notification/>
             
-              
+            
+          <Toast toastlist={list} position="absolute" setList={setList} />   
           <input type="submit" id="submit-btn" value="Register" onClick={() => {postData()} } />
               </div>
              

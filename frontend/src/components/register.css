@@ -197,10 +197,10 @@ position: absolute;
 #submit-btn{
          position: absolute;
         height: 56px;
-        left: 16px;
+        left: 23px;
         right: 0px;
         top: 650px;
-    
+        width: 350px;
         /* Yellow */
     
         background: #F2C94C;
