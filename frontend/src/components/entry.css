@@ -1,0 +1,92 @@
+.entryPage{
+    position: relative;
+    width: 360px;
+    height: 720px;
+
+    background: #FFFFFF;
+}
+
+.tic{
+position: absolute;
+    width: 156px;
+    height: 240px;
+    left: 105px;
+    top: 231px;
+    font-family: 'Bilbo';
+    font-style: normal;
+        font-weight: 400;
+        font-size: 96px;
+        line-height: 120px;
+        text-align: center;
+    
+        color: #000000;
+}
+
+.async{
+    position: absolute;
+        width: 53px;
+        height: 45px;
+        left: 156px;
+        top: 174px;
+    
+        font-family: 'Bilbo';
+        font-style: normal;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 45px;
+            /* identical to box height */
+        
+        
+            color: #000000;
+}
+
+li{
+    position: absolute;
+        width: 39px;
+        height: 14px;
+        left: calc(50% - 39px/2 + 0.5px);
+        top: calc(50% - 14px/2);
+    
+        font-family: 'Epilogue';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 14px;
+        text-align: center;
+    
+        /* White */
+    
+        color: #FFFFFF;
+        list-style: none;
+}
+.login-btn{
+           position: relative;
+            height: 56px;
+            left: 16px;
+            right: 16px;
+            top: 568px;
+        
+            /* Yellow */
+        
+            background: #F2C94C;
+            /* Drop Shadow 1 */
+        
+            box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.16);
+            border-radius: 8px;
+}
+
+.registe-btn{
+            position: relative;
+            height: 56px;
+            left: 16px;
+            right: 16px;
+            top: 648px;
+        
+            /* Blue 1 */
+        
+            background: #2F80ED;
+            /* Drop Shadow 1 */
+        
+            box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.16);
+            border-radius: 8px;
+}

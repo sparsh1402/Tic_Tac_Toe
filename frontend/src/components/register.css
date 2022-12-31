@@ -1,0 +1,221 @@
+.signUp{
+    position: relative;
+        width: 360px;
+        height: 720px;
+    
+        background: #FFFFFF;
+}
+.create{
+    position: absolute;
+        width: 114px;
+        height: 14px;
+        left: 24px;
+        top: 75px;
+    
+        font-family: 'Epilogue';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 14px;
+    
+        /* Dark Grey */
+    
+        color: #333333;
+}
+.lets{
+position: absolute;
+    width: 255px;
+    height: 64px;
+    left: 24px;
+    top: 98px;
+
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 32px;
+    /* or 114% */
+
+    letter-spacing: -0.05em;
+
+    /* Dark Grey */
+
+    color: #333333;
+}
+
+
+.form {
+    top: 201px;
+
+}
+.name{
+        position: absolute;
+        width: 76px;
+        height: 14px;
+        left: 24px;
+        top: 201px;
+    
+        font-family: 'Epilogue';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 14px;
+    
+        /* Dark Grey */
+    
+        color: #333333;
+}
+.nameBox{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px 16px 16px;
+        gap: 4px;
+    
+        position: absolute;
+        width: 312px;
+        height: 30px;
+        left: 24px;
+        top: 230px;
+    
+        /* Smoke Grey */
+    
+        background: #F4F4F4;
+        border-radius: 8px;
+}
+
+.userName{
+    position: absolute;
+        width: 73px;
+        height: 14px;
+        left: 24px;
+        top: 299px;
+    
+        font-family: 'Epilogue';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 14px;
+    
+        /* Dark Grey */
+    
+        color: #333333;
+}
+.userNameBox{
+    display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px 16px 16px;
+        gap: 4px;
+    
+        position: absolute;
+        width: 312px;
+        height: 30px;
+        left: 24px;
+        top: 327px;
+    
+        /* Smoke Grey */
+    
+        background: #F4F4F4;
+        border-radius: 8px;
+}
+
+.Email{
+    position: absolute;
+        width: 38px;
+        height: 14px;
+        left: 24px;
+        top: 397px;
+    
+        font-family: 'Epilogue';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 14px;
+    
+        /* Dark Grey */
+    
+        color: #333333;
+}
+
+.emailBox{
+    display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px 16px 16px;
+        gap: 4px;
+    
+        position: absolute;
+        width: 312px;
+        height: 30px;
+        left: 24px;
+        top: 425px;
+    
+        /* Smoke Grey */
+    
+        background: #F4F4F4;
+        border-radius: 8px;
+}
+
+.Password{
+    position: absolute;
+        width: 69px;
+        height: 14px;
+        left: 24px;
+        top: 495px;
+    
+        font-family: 'Epilogue';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 14px;
+    
+        /* Dark Grey */
+    
+        color: #333333;
+}
+
+
+.passwordBox{
+    display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px 16px 16px;
+        gap: 4px;
+    
+        position: absolute;
+        width: 312px;
+        height: 30px;
+        left: 24px;
+        top: 523px;
+        /* Smoke Grey */
+        
+            background: #F4F4F4;
+            border-radius: 8px;
+}
+
+#submit-btn{
+         position: absolute;
+        height: 56px;
+        left: 16px;
+        right: 0px;
+        top: 650px;
+    
+        /* Yellow */
+    
+        background: #F2C94C;
+        /* Drop Shadow 1 */
+    
+        box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.16);
+        border-radius: 8px;
+}
+
+.congo{
+        position: absolute;
+        right: 0px;
+        height: 40px;
+        left: 16px;
+        top: 500px;
+    
+        
+}
